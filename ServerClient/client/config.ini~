@@ -1,0 +1,24 @@
+[global]
+
+station = 信用浙江
+
+begin_url = http://www.zjcredit.gov.cn:8000/CreditQuery.aspx?sectionID=02
+
+query_url = http://www.zjcredit.gov.cn:8000/ListQuery.aspx
+
+post_data_dic = {'isIntermediary': 'False', 'isOpen': 'False', 'pageLength': '20', 'recordTotal': '1778190', 'sectionID': '02', 'sortDirection': '1', 'sortField': 'CreditID'}
+hostSvr = 192.168.11.102:8080
+
+preUrl = http://www.zjcredit.gov.cn:8000/EnterpriseInfo.aspx?creditID=
+preUrlip = http://218.108.28.28:8000/EnterpriseInfo.aspx?creditID=
+
+basePostUrl = http://www.zjcredit.gov.cn:8000/GetInfoByDataSupplier.aspx
+basePostUrlip = http://218.108.28.28:8000/GetInfoByDataSupplier.aspx
+
+dbHost = 192.168.11.102
+
+dbUser = root
+
+dbPasswd = root
+
+rdb = rawData

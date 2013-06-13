@@ -1,0 +1,7 @@
+this do not need a distribute server
+
+run like this :python dClient.py 1 2000  3000
+
+before you run this,contact me to get a datastructrue sql 
+even you can read the functions and build you own crawler
+it can get a page whit get and post request with proxy
