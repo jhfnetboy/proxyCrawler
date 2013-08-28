@@ -1,0 +1,195 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	标题列表页
+</title><link href="style.css" rel="stylesheet" type="text/css" />
+
+<script language="javascript" type="text/javascript">
+<!--
+function my_init() 
+{
+    parent.document.getElementById("navTitle").innerHTML = "";
+    if (parent && parent.resizeHeight) {parent.resizeHeight(document.body.scrollHeight);}
+}
+
+function skipPage(pno)                   // 跳页 
+{
+    if (pno==null || pno=="") {alert("请输入要跳到的页号。");}
+    else 
+    {
+        var currentPage = parseInt(pno, 10);
+        if (currentPage<1 || currentPage>6) {alert("输入的页号必须在1――"+6+"之间。");}
+        else 
+        {
+            myform.pageNo.value = currentPage;
+            myform.submit();
+        }
+    }
+}
+
+//-->
+</script>
+
+<script type='text/javascript' src='http://static.gridsumdissector.com/js/Clients/GWD-800219-0827AA/gs.js'></script>
+</head>
+<body style='margin:0px 0px 0px 0px;' onload='my_init()' onload="parent.document.all(self.name).height = document.body.scrollHeight;">
+  
+  <!---列表信息--->
+  <div>
+    <table width="90%" align="center" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td style="width: 100%; height: 500px; text-align: center; vertical-align: top;">
+    <form class="tsearch" name="listSearchForm" method="post" action="" style=" text-align:center;">
+      <input type="Hidden" name="sectionID" size="10" maxlength="20" value="01" />
+      <input type="Hidden" name="organizationCode" size="10" maxlength="20" value="" />
+      任意词
+      <input type="text" name="searchInfo" id="searchInfo" value="" /> 
+      <input name="submit1" type="submit" class="button" value="查询" />
+
+    </form>
+
+          <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tr>
+              <td style="text-align: left;">
+<div>
+  <div class="s2255aa" style="float:left;">(第 <span class="sff0000" id="curPage">1</span> / <span class="sff0000" id="totalPage">6</span> 页) 共 <span class="sff0000">115</span> 条信息 </div>
+  <div class="s2255aa" style="float:right"><img src="images/p1.gif"> 第一页</a>
+    <img src="images/p2.gif"> 上一页</a>&nbsp;
+    <a href='javascript:skipPage(2)'>下一页</a> <img src="images/p3.gif">
+    <a href='javascript:skipPage(6)'>最末页</a> <img src="images/p4.gif">
+    <input name='pageNo' type='text' size='4' style='height:16px;' onfocus='this.select()' onpaste='return false' onkeypress='if (event.keyCode==13) {skipPage(this.value);} else {return (event.keyCode>=48&&event.keyCode<=57);}' />页<input type='button' name='go' value='GO' onclick='skipPage(pageNo.value)' />
+  </div>
+</div>
+
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: left;">
+                <table border="0" cellpadding="4" cellspacing="1" style="width: 100%; background-color: #ffffff;">
+<tr bgcolor='#ffffff'>
+  <td style='text-align:left'><img border="0" align="absmiddle" height="3" width="3" src="images/dot.gif"/></td>
+  <td class="s2255aa" style='text-align:left;' title='信用服务机构：投标企业信用报告'><a href="ListPrompts.aspx?sectionID=01&tableID=IntermediaryCreditLevel&associateID=88888888888888888&hasPromptHistroy=False">信用服务机构：投标企业信用报告</a></td><td class="s005e14" width="25%">[更新至2013-07-11]</td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td style='text-align:left'><img border="0" align="absmiddle" height="3" width="3" src="images/dot.gif"/></td>
+  <td class="s2255aa" style='text-align:left;' title='浙江省高级人民法院：单位未履行生效裁判失信信息'><a href="ListPrompts.aspx?sectionID=01&tableID=CourtNotCarryOut&associateID=00000000000000000&hasPromptHistroy=False">浙江省高级人民法院：单位未履行生效裁判失信信息</a></td><td class="s005e14" width="25%">[更新至2013-07-10]</td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td style='text-align:left'><img border="0" align="absmiddle" height="3" width="3" src="images/dot.gif"/></td>
+  <td class="s2255aa" style='text-align:left;' title='工商局：工商年检信息'><a href="ListPrompts.aspx?sectionID=01&tableID=BusinessAnnualInspect&associateID=002482410&hasPromptHistroy=False">工商局：工商年检信息</a></td><td class="s005e14" width="25%">[更新至2013-04-09]</td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td style='text-align:left'><img border="0" align="absmiddle" height="3" width="3" src="images/dot.gif"/></td>
+  <td class="s2255aa" style='text-align:left;' title='建设厅：安全许可证信息'><a href="ListPrompts.aspx?sectionID=01&tableID=ConstructionLicense&associateID=00248224220110616&hasPromptHistroy=False">建设厅：安全许可证信息</a></td><td class="s005e14" width="25%">[更新至2013-07-08]</td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td style='text-align:left'><img border="0" align="absmiddle" height="3" width="3" src="images/dot.gif"/></td>
+  <td class="s2255aa" style='text-align:left;' title='国税局：纳税信息'><a href="ListPrompts.aspx?sectionID=01&tableID=TaxInfo&associateID=00000000000000000&hasPromptHistroy=False">国税局：纳税信息</a><img border='0' src='images/cax.gif' alt='' />
+</td><td class="s005e14" width="25%">[更新至2013-06-13]</td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td style='text-align:left'><img border="0" align="absmiddle" height="3" width="3" src="images/dot.gif"/></td>
+  <td class="s2255aa" style='text-align:left;' title='地税局：稽查信息'><a href="ListPrompts.aspx?sectionID=01&tableID=RentTaxInfo&associateID=00000000000000000&hasPromptHistroy=False">地税局：稽查信息</a><img border='0' src='images/cax.gif' alt='' />
+</td><td class="s005e14" width="25%">[更新至2013-06-13]</td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td style='text-align:left'><img border="0" align="absmiddle" height="3" width="3" src="images/dot.gif"/></td>
+  <td class="s2255aa" style='text-align:left;' title='地税局：纳税及欠缴税信息'><a href="ListPrompts.aspx?sectionID=01&tableID=RentPayTaxInfo&associateID=00000000000000000&hasPromptHistroy=False">地税局：纳税及欠缴税信息</a><img border='0' src='images/cax.gif' alt='' />
+</td><td class="s005e14" width="25%">[更新至2013-06-13]</td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td style='text-align:left'><img border="0" align="absmiddle" height="3" width="3" src="images/dot.gif"/></td>
+  <td class="s2255aa" style='text-align:left;' title='国税局：欠税信息'><a href="ListPrompts.aspx?sectionID=01&tableID=TaxOfNopayed&associateID=00000000000000000&hasPromptHistroy=False">国税局：欠税信息</a><img border='0' src='images/cax.gif' alt='' />
+</td><td class="s005e14" width="25%">[更新至2013-06-13]</td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td style='text-align:left'><img border="0" align="absmiddle" height="3" width="3" src="images/dot.gif"/></td>
+  <td class="s2255aa" style='text-align:left;' title='国税局：稽查信息'><a href="ListPrompts.aspx?sectionID=01&tableID=TaxCheck&associateID=00000000000000000&hasPromptHistroy=False">国税局：稽查信息</a><img border='0' src='images/cax.gif' alt='' />
+</td><td class="s005e14" width="25%">[更新至2013-06-13]</td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td style='text-align:left'><img border="0" align="absmiddle" height="3" width="3" src="images/dot.gif"/></td>
+  <td class="s2255aa" style='text-align:left;' title='物价局：价格违法查处信息'><a href="ListPrompts.aspx?sectionID=01&tableID=PricePunishment&associateID=00000000000000000&hasPromptHistroy=False">物价局：价格违法查处信息</a><img border='0' src='images/cax.gif' alt='' />
+</td><td class="s005e14" width="25%">[更新至2013-06-13]</td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td style='text-align:left'><img border="0" align="absmiddle" height="3" width="3" src="images/dot.gif"/></td>
+  <td class="s2255aa" style='text-align:left;' title='杭州海关：海关企业分类管理信息'><a href="ListPrompts.aspx?sectionID=01&tableID=HZCustomsCorpManage&associateID=00248405320110908&hasPromptHistroy=False">杭州海关：海关企业分类管理信息</a></td><td class="s005e14" width="25%">[更新至2013-06-09]</td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td style='text-align:left'><img border="0" align="absmiddle" height="3" width="3" src="images/dot.gif"/></td>
+  <td class="s2255aa" style='text-align:left;' title='民政厅：基金会登记管理信息'><a href="ListPrompts.aspx?sectionID=01&tableID=MCAOrgRegManage&associateID=00248214620100908&hasPromptHistroy=False">民政厅：基金会登记管理信息</a></td><td class="s005e14" width="25%">[更新至2013-06-09]</td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td style='text-align:left'><img border="0" align="absmiddle" height="3" width="3" src="images/dot.gif"/></td>
+  <td class="s2255aa" style='text-align:left;' title='民政厅：民办非企业单位登记管理信息'><a href="ListPrompts.aspx?sectionID=01&tableID=MCAOrgRegManage&associateID=00248214620100907&hasPromptHistroy=False">民政厅：民办非企业单位登记管理信息</a></td><td class="s005e14" width="25%">[更新至2013-06-09]</td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td style='text-align:left'><img border="0" align="absmiddle" height="3" width="3" src="images/dot.gif"/></td>
+  <td class="s2255aa" style='text-align:left;' title='民政厅：社会团体登记管理信息'><a href="ListPrompts.aspx?sectionID=01&tableID=MCAOrgRegManage&associateID=00248214620100906&hasPromptHistroy=False">民政厅：社会团体登记管理信息</a></td><td class="s005e14" width="25%">[更新至2013-06-09]</td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td style='text-align:left'><img border="0" align="absmiddle" height="3" width="3" src="images/dot.gif"/></td>
+  <td class="s2255aa" style='text-align:left;' title='阿里巴巴：阿里巴巴恶意拖欠贷款客户信息'><a href="ListPrompts.aspx?sectionID=01&tableID=AlibabaBlacklist&associateID=20120605&hasPromptHistroy=False">阿里巴巴：阿里巴巴恶意拖欠贷款客户信息</a></td><td class="s005e14" width="25%">[更新至2013-05-08]</td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td style='text-align:left'><img border="0" align="absmiddle" height="3" width="3" src="images/dot.gif"/></td>
+  <td class="s2255aa" style='text-align:left;' title='省政府：2012年浙江省政府质量奖'><a href="ListPrompts.aspx?sectionID=01&tableID=AllHonor&associateID=33333333320130508&hasPromptHistroy=False">省政府：2012年浙江省政府质量奖</a></td><td class="s005e14" width="25%">[更新至2013-05-08]</td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td style='text-align:left'><img border="0" align="absmiddle" height="3" width="3" src="images/dot.gif"/></td>
+  <td class="s2255aa" style='text-align:left;' title='证监局：行政处罚信息'><a href="ListPrompts.aspx?sectionID=01&tableID=AllPunishment&associateID=47008572320130508&hasPromptHistroy=False">证监局：行政处罚信息</a></td><td class="s005e14" width="25%">[更新至2013-05-08]</td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td style='text-align:left'><img border="0" align="absmiddle" height="3" width="3" src="images/dot.gif"/></td>
+  <td class="s2255aa" style='text-align:left;' title='安监局：2012年发生较大及以上生产安全事故和2次以上（含）死亡生产安全事故责任企业（单位）名单'><a href="ListPrompts.aspx?sectionID=01&tableID=SSCorporateLawInformation&associateID=12345678920130401&hasPromptHistroy=False">安监局：2012年发生较大及以上生产安全事故和2次以上（含）死亡生产安全事故责任企...</a></td><td class="s005e14" width="25%">[更新至2013-04-23]</td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td style='text-align:left'><img border="0" align="absmiddle" height="3" width="3" src="images/dot.gif"/></td>
+  <td class="s2255aa" style='text-align:left;' title='工商局：2012浙江省工商企业信用AAA级“守合同重信用”单位'><a href="ListPrompts.aspx?sectionID=01&tableID=BusinessHonor&associateID=00248241020121010&hasPromptHistroy=False">工商局：2012浙江省工商企业信用AAA级“守合同重信用”单位</a></td><td class="s005e14" width="25%">[更新至2013-03-18]</td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td style='text-align:left'><img border="0" align="absmiddle" height="3" width="3" src="images/dot.gif"/></td>
+  <td class="s2255aa" style='text-align:left;' title='人力社保厅：2012年度欠薪企业'><a href="ListPrompts.aspx?sectionID=01&tableID=HRSSPunishment&associateID=00248222620130130&hasPromptHistroy=False">人力社保厅：2012年度欠薪企业</a></td><td class="s005e14" width="25%">[更新至2013-03-08]</td>
+</tr>
+
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: left;">
+<div>
+  <div class="s2255aa" style="float:left;">(第 <span class="sff0000" id="curPage">1</span> / <span class="sff0000" id="totalPage">6</span> 页) 共 <span class="sff0000">115</span> 条信息 </div>
+  <div class="s2255aa" style="float:right"><img src="images/p1.gif"> 第一页</a>
+    <img src="images/p2.gif"> 上一页</a>&nbsp;
+    <a href='javascript:skipPage(2)'>下一页</a> <img src="images/p3.gif">
+    <a href='javascript:skipPage(6)'>最末页</a> <img src="images/p4.gif">
+    <input name='pageNoDown' type='text' size='4' style='height:16px;' onfocus='this.select()' onpaste='return false' onkeypress='if (event.keyCode==13) {skipPage(this.value);} else {return (event.keyCode>=48&&event.keyCode<=57);}' />页<input type='button' name='go' value='GO' onclick='skipPage(pageNoDown.value)' />
+  </div>
+</div>
+
+              </td>
+            </tr>
+          </table>
+
+        </td>
+      </tr>
+    </table>
+    <!----- 重新列表的表单，用于跳页、排序。 ------->
+    <table border="0" cellpadding="2" cellspacing="0" style="display: none">
+      <form name="myform" method="POST" action="">
+        <tr><td>进入的栏目：<input type="text" name="sectionID" value="01" /></td></tr>
+        <tr><td>页 序 号：<input type="text" name="pageNo" size="3" value="1" onpaste="return false" onkeypress="return (event.keyCode>=48&&event.keyCode<=57);" /></td></tr>
+        <tr><td>页 长 度：<input type="text" name="pageLength" size="3" value="20" onpaste="return false" onkeypress="return (event.keyCode>=48&&event.keyCode<=57);" /></td></tr>
+        <tr><td>查询内容：<input type="text" name="searchInfo" value="" /></td></tr>
+        <tr><td>组织机构代码：<input type="text" name="organizationCode" value="" /></td></tr>
+
+      </form>
+    </table>
+    
+  </div>
+</body>
+</html>

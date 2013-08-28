@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html class="ie ie6"><![endif]-->
+<!--[if IE 7]><html class="ie ie7"><![endif]-->
+<!--[if IE 8 ]><html class="ie8"><![endif]-->
+<!--[if !IE]><!--><html><!--<![endif]-->
+<head>
+  <meta name="baidu-tc-verification" content="0d1aa8c7570b174a9da5b2143c7c6f88" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>商安卫士，让我们放心做生意！</title>
+  <meta content="  商安卫士,企业商务安全卫士,商业信息,商业信息查询,企业信息查询,交易,公司查询,企业查询,工商注册信息查询,商务服务,商业服务,营业执照查询" name="keywords" />
+  <meta content="  商安卫士网站简介：商安卫士是浙江商安信息科技有限公司针对中国企业商务安全工程，自主研究开发的完全知识产权产品。是为了企业更好地做生意，应对商务安全风险的实用工具。" name="description" />
+  <meta property="wb:webmaster" content="ff10bba48392525f" />
+  <meta content="/" name="siteBaseurl" id="site-base-url" />
+  <meta property="qc:admins" content="325332456612166651710060007" />
+  <meta property="qc:admins" content="144647164162333606375" />
+      <link rel="stylesheet" type="text/css" href="/bundles/topxiaweb/css/alice-base.css?8" />
+    <link rel="stylesheet" type="text/css" href="/css/common.css?8" />
+    <link href="/bundles/topxiaweb/css/bss360_dev.css?8" rel="stylesheet" />
+  
+      <!--[if IE]><script src="/uilibs/html5shiv/html5shiv.js?8"></script><![endif]-->
+    <script src="/uilibs/seajs/1.3.1/sea.js" id="seajsnode"></script>
+  </head>
+
+<body class="index">
+  <div class="global-nav">
+      <ul class="topmenu">
+                        <li>
+            <a href="javascript:void(0);" class="global-nav-login login-btn" data-ajax-url="http://www.bss360.com/login/dialog" data-ajax-type="get">登录</a>
+          </li>
+          
+                <li>
+          <a href="http://www.bss360.com/register" class="global-nav-regsiter">注册</a>
+        </li>
+        
+              <li>
+          <a href="http://www.bss360.com/feedback/question" class="global-nav-help">问题反馈</a>
+        </li>
+      </ul>
+  </div>
+  <div class="container">
+        <div class="index-container">
+      <div class="tac mbm">
+        <a href="http://www.bss360.com/">
+          <img src="/bundles/topxiaweb/img/logo.png?8" width="270" height="83" >
+        </a>
+      </div>
+      <div class="tac">
+         <div class="search-form">
+          <ul class="search-item">
+            <li class="first active"><a href="#">企业</a></li>
+            <li ><a href="http://www.bss360.com/news/">预警</a></li>
+            <li ><a href="http://www.bss360.com/riskreport">信用评估</a></li>
+          </ul>
+          <form action="http://www.bss360.com/search" method="get" class="search-form">
+          <input type="text" id="search_q" name="search[q]"    class="serach-input" placeholder="请输入您要查询的企业名称" />
+          <input type="hidden" id="search_type" name="search[type]" /><input type="hidden" id="search__token" name="search[_token]" value="e2cbf289b78046244e7f899206bd27ddaa7e9869" />
+          <input type="submit" class="serach-button "value="安检一下">
+          </form>
+         </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">商务安全@版权所有</footer>
+<script>
+var __seajs_debug = 0;
+var __seajs_assets_version = '8';
+
+seajs.use('/bundles/topxiaweb/js/app.js?8', function(app) {
+          app.context.user = {
+          id : 0,
+          username : '',
+          login : false
+      }
+      app.filterScript();
+  app.bootstrap(app.context.user);
+  	app.load('default');
+});
+</script>
+
+</body>
+</html>

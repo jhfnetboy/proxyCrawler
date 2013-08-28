@@ -1,0 +1,241 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	标题列表页
+</title><link href="style.css" rel="stylesheet" type="text/css" />
+
+<script language="javascript" type="text/javascript">
+<!--
+function my_init() 
+{
+
+    parent.document.getElementById("navTitle").innerHTML = " >> 浙江省高级人民法院：单位未履行生效裁判失信信息";
+    if (parent && parent.resizeHeight) {parent.resizeHeight(document.body.scrollHeight);}
+}
+
+function skipPage(pno)                   // 跳页
+{
+    if (pno==null || pno=="") {alert("请输入要跳到的页号。");}
+    else 
+    {
+        var currentPage = parseInt(pno, 10);
+        if (currentPage<1 || currentPage>2318) {alert("输入的页号必须在1――"+2318+"之间。");}
+        else 
+        {
+            myform.pageNo.value = currentPage;
+            myform.submit();
+        }
+    }
+}
+
+function onCrompt(o)
+{	
+    listForm.action="ListInfo.aspx";
+    listForm.tableID.value=o;
+    listForm.submit();
+}
+
+function onInfoShow(tID, cID, ts, aid, cName,rowID)
+{
+    listForm.target = "_blank";
+    listForm.action = "BrowseDocumentPrompt.aspx";
+    listForm.creditID.value = cID;
+    listForm.tableID.value = tID;
+    listForm.rowID.value = rowID;
+    listForm.timeSpan.value = ts;
+    listForm.corpName.value = cName;
+    listForm.associateID.value = aid;
+    listForm.submit();
+}
+
+function onInfoShowReport(tID, cID, ts, aid, cName,rowID)
+{
+    listForm.target = "_blank";
+    listForm.action = "BrowseDocumentPromptReport.aspx";
+    listForm.creditID.value = cID;
+    listForm.tableID.value = tID;
+    listForm.rowID.value = rowID;
+    listForm.timeSpan.value = ts;
+    listForm.corpName.value = cName;
+    listForm.associateID.value = aid;
+    listForm.submit();
+}
+
+// 根据 条件 排序 SEQ号
+function onInfoShowBySeqNo(tID, cID, seqNo, aid, cName)
+{
+    listForm.target = "_blank";
+    listForm.action = "BrowseDocumentPromptBySeqNo.aspx";
+    listForm.creditID.value = cID;
+    listForm.corpName.value = cName;
+    listForm.tableID.value = tID;
+    listForm.seqNo.value = seqNo;
+    listForm.associateID.value = aid;
+    listForm.submit();
+}
+
+//-->
+</script>
+<script type='text/javascript' src='http://static.gridsumdissector.com/js/Clients/GWD-800219-0827AA/gs.js'></script>
+</head>
+<body style='margin:0px 0px 0px 0px;' onload='my_init()' onload="parent.document.all(self.name).height = document.body.scrollHeight;">
+  <!---Title--->
+  
+  <!---列表信息--->
+  <div>
+    <table width="90%" align="center" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td style="width: 100%; height: 500px; text-align: center; vertical-align: top;text-align:left;">
+
+    <form class="tsearch" name="listSearchForm" method="post" action="" style="text-align:center">
+      <input type="Hidden" name="sectionID" size="10" maxlength="20" value="01" />
+      <input type="Hidden" name="tableID" size="10" maxlength="20" value="CourtNotCarryOut" />
+      <input type="Hidden" name="associateID" size="10" maxlength="20" value="00000000000000000" />
+      <input type="Hidden" name="hasQuery" size="10" maxlength="20" value="False" />
+      <input type="Hidden" name="isIntermediary" size="10" maxlength="20" value="False" />
+企业名称：<input type='text' name='field_CorporationName' value=''>
+组织机构代码：<input type='text' name='field_OrganizationCode' value=''>
+   
+      <input name="submit1" type="submit" class="button" value="查询" />
+    </form>
+
+          <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+            <tr>
+              <td style="text-align: left;">
+<div>
+  <div class="s2255aa" style="float:left;">(第 <span class="sff0000" id="curPage">4</span> / <span class="sff0000" id="totalPage">2318</span> 页) 共 <span class="sff0000">46358</span> 条信息 </div>
+  <div class="s2255aa" style="float:right"><img src="images/p1.gif"> <a href='javascript:skipPage(1)'>第一页</a>
+    <img src="images/p2.gif"> <a href='javascript:skipPage(3)'>上一页</a>&nbsp;
+    <a href='javascript:skipPage(5)'>下一页</a> <img src="images/p3.gif">
+    <a href='javascript:skipPage(2318)'>最末页</a> <img src="images/p4.gif">
+    <input name='pageNo' type='text' size='4' style='height:16px;' onfocus='this.select()' onpaste='return false' onkeypress='if (event.keyCode==13) {skipPage(this.value);} else {return (event.keyCode>=48&&event.keyCode<=57);}' />页<input type='button' name='go' value='GO' onclick='skipPage(pageNo.value)' />
+  </div>
+</div>
+
+              </td>
+            </tr>
+            <tr>
+              <td align="center">
+                <div style="border-top: 1px dashed #cccccc; height: 1px; overflow: hidden;">
+                </div>
+                <table border="0" cellpadding="4" cellspacing="1" style=" width: 100%; background-color: #ffffff; text-align:left; ">
+                  <tr style="background-color: #eeeeee; font-weight: bold">
+<tr bgcolor='#ffffff'>
+  <td width='90%' class="s2255aa"  style='text-align:left;'>61. <a title=' 舟山市东升水产有限公司' onclick="onInfoShow('CourtNotCarryOut','0','','00000000000000000','舟山市东升水产有限公司','AAAl2vAACAAA3A3AAF');" > 舟山市东升水产有限公司</a><span class="s005e14">[2013-07-15]<span></td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td width='90%' class="s2255aa"  style='text-align:left;'>62. <a title=' 浙江中港房地产开发有限公司' onclick="onInfoShow('CourtNotCarryOut','0','','00000000000000000','浙江中港房地产开发有限公司','AAAl2vAACAAA3AZAAD');" > 浙江中港房地产开发有限公司</a><span class="s005e14">[2013-07-15]<span></td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td width='90%' class="s2255aa"  style='text-align:left;'>63. <a title=' 浙江荣远建设有限公司' onclick="onInfoShow('CourtNotCarryOut','0','','00000000000000000','浙江荣远建设有限公司','AAAl2vAACAAA3AWAAH');" > 浙江荣远建设有限公司</a><span class="s005e14">[2013-07-15]<span></td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td width='90%' class="s2255aa"  style='text-align:left;'>64. <a title=' 杭州日日惠美佳贸易有限公司' onclick="onInfoShow('CourtNotCarryOut','0','','00000000000000000','杭州日日惠美佳贸易有限公司','AAAl2vAACAAA3AOAAV');" > 杭州日日惠美佳贸易有限公司</a><span class="s005e14">[2013-07-15]<span></td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td width='90%' class="s2255aa"  style='text-align:left;'>65. <a title=' 宁波市鄞州欣凯服饰有限公司' onclick="onInfoShow('CourtNotCarryOut','0','','00000000000000000','宁波市鄞州欣凯服饰有限公司','AAAl2vAACAAA3ANAAO');" > 宁波市鄞州欣凯服饰有限公司</a><span class="s005e14">[2013-07-15]<span></td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td width='90%' class="s2255aa"  style='text-align:left;'>66. <a title=' 温州信宝行汽车销售有限公司' onclick="onInfoShow('CourtNotCarryOut','0','','00000000000000000','温州信宝行汽车销售有限公司','AAAl2vAACAAA3AMAAJ');" > 温州信宝行汽车销售有限公司</a><span class="s005e14">[2013-07-15]<span></td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td width='90%' class="s2255aa"  style='text-align:left;'>67. <a title=' 杭州兆丰电池有限公司' onclick="onInfoShow('CourtNotCarryOut','0','','00000000000000000','杭州兆丰电池有限公司','AAAl2vAACAAA2/qAAB');" > 杭州兆丰电池有限公司</a><span class="s005e14">[2013-07-15]<span></td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td width='90%' class="s2255aa"  style='text-align:left;'>68. <a title=' 浙江雄盛实业有限公司' onclick="onInfoShow('CourtNotCarryOut','0','','00000000000000000','浙江雄盛实业有限公司','AAAl2vAACAAA2/pAAB');" > 浙江雄盛实业有限公司</a><span class="s005e14">[2013-07-15]<span></td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td width='90%' class="s2255aa"  style='text-align:left;'>69. <a title=' 浙江华厦建设集团有限公司' onclick="onInfoShow('CourtNotCarryOut','0','','00000000000000000','浙江华厦建设集团有限公司','AAAl2vAACAAA2/lAAA');" > 浙江华厦建设集团有限公司</a><span class="s005e14">[2013-07-15]<span></td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td width='90%' class="s2255aa"  style='text-align:left;'>70. <a title=' 浙江绅狮汽车销售服务有限公司' onclick="onInfoShow('CourtNotCarryOut','0','','00000000000000000','浙江绅狮汽车销售服务有限公司','AAAl2vAACAAA2/hAAO');" > 浙江绅狮汽车销售服务有限公司</a><span class="s005e14">[2013-07-15]<span></td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td width='90%' class="s2255aa"  style='text-align:left;'>71. <a title=' 浙江海中天橡塑有限公司' onclick="onInfoShow('CourtNotCarryOut','0','','00000000000000000','浙江海中天橡塑有限公司','AAAl2vAACAAA3A2AAI');" > 浙江海中天橡塑有限公司</a><span class="s005e14">[2013-07-15]<span></td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td width='90%' class="s2255aa"  style='text-align:left;'>72. <a title=' 烟台市康达化工有限公司' onclick="onInfoShow('CourtNotCarryOut','0','','00000000000000000','烟台市康达化工有限公司','AAAl2vAACAAA3AqAAL');" > 烟台市康达化工有限公司</a><span class="s005e14">[2013-07-15]<span></td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td width='90%' class="s2255aa"  style='text-align:left;'>73. <a title=' 温州飞云湖置业有限公司' onclick="onInfoShow('CourtNotCarryOut','0','','00000000000000000','温州飞云湖置业有限公司','AAAl2vAACAAA3AiAAA');" > 温州飞云湖置业有限公司</a><span class="s005e14">[2013-07-15]<span></td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td width='90%' class="s2255aa"  style='text-align:left;'>74. <a title=' 温州日茂土石方运输有限公司' onclick="onInfoShow('CourtNotCarryOut','0','','00000000000000000','温州日茂土石方运输有限公司','AAAl2vAACAAA3AeAAW');" > 温州日茂土石方运输有限公司</a><span class="s005e14">[2013-07-15]<span></td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td width='90%' class="s2255aa"  style='text-align:left;'>75. <a title=' 诸暨市建发钢铁贸易有限公司' onclick="onInfoShow('CourtNotCarryOut','0','','00000000000000000','诸暨市建发钢铁贸易有限公司','AAAl2vAACAAA3AdAAC');" > 诸暨市建发钢铁贸易有限公司</a><span class="s005e14">[2013-07-15]<span></td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td width='90%' class="s2255aa"  style='text-align:left;'>76. <a title=' 杭州问天实业有限公司' onclick="onInfoShow('CourtNotCarryOut','0','','00000000000000000','杭州问天实业有限公司','AAAl2vAACAAA2+uAAR');" > 杭州问天实业有限公司</a><span class="s005e14">[2013-07-15]<span></td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td width='90%' class="s2255aa"  style='text-align:left;'>77. <a title=' 桐乡市恒韵服饰有限公司' onclick="onInfoShow('CourtNotCarryOut','0','','00000000000000000','桐乡市恒韵服饰有限公司','AAAl2vAACAAA2+tAAA');" > 桐乡市恒韵服饰有限公司</a><span class="s005e14">[2013-07-15]<span></td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td width='90%' class="s2255aa"  style='text-align:left;'>78. <a title=' 浙江南申铜业有限公司' onclick="onInfoShow('CourtNotCarryOut','0','','00000000000000000','浙江南申铜业有限公司','AAAl2vAACAAA2+sAAB');" > 浙江南申铜业有限公司</a><span class="s005e14">[2013-07-15]<span></td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td width='90%' class="s2255aa"  style='text-align:left;'>79. <a title=' 天衣轮胎有限公司' onclick="onInfoShow('CourtNotCarryOut','0','','00000000000000000','天衣轮胎有限公司','AAAl2vAACAAA2+kAAV');" > 天衣轮胎有限公司</a><span class="s005e14">[2013-07-15]<span></td>
+</tr>
+<tr bgcolor='#ffffff'>
+  <td width='90%' class="s2255aa"  style='text-align:left;'>80. <a title=' 宁波市鄞州博翔服饰有限公司' onclick="onInfoShow('CourtNotCarryOut','0','','00000000000000000','宁波市鄞州博翔服饰有限公司','AAAl2vAACAAA2+fAAF');" > 宁波市鄞州博翔服饰有限公司</a><span class="s005e14">[2013-07-15]<span></td>
+</tr>
+
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: left;">
+<div>
+  <div class="s2255aa" style="float:left;">(第 <span class="sff0000" id="curPage">4</span> / <span class="sff0000" id="totalPage">2318</span> 页) 共 <span class="sff0000">46358</span> 条信息 </div>
+  <div class="s2255aa" style="float:right"><img src="images/p1.gif"> <a href='javascript:skipPage(1)'>第一页</a>
+    <img src="images/p2.gif"> <a href='javascript:skipPage(3)'>上一页</a>&nbsp;
+    <a href='javascript:skipPage(5)'>下一页</a> <img src="images/p3.gif">
+    <a href='javascript:skipPage(2318)'>最末页</a> <img src="images/p4.gif">
+    <input name='pageNoDown' type='text' size='4' style='height:16px;' onfocus='this.select()' onpaste='return false' onkeypress='if (event.keyCode==13) {skipPage(this.value);} else {return (event.keyCode>=48&&event.keyCode<=57);}' />页<input type='button' name='go' value='GO' onclick='skipPage(pageNoDown.value)' />
+  </div>
+</div>
+
+              </td>
+            </tr>
+          </table>
+
+        </td>
+      </tr>
+    </table>
+    <!----- 重新列表的表单，用于跳页、排序。 ------->
+    <table border="0" cellpadding="2" cellspacing="0" style="display: none">
+      <form name="myform" method="POST" action="">
+        <tr><td>表标识：<input type="text" name="tableID" value="CourtNotCarryOut" /></td></tr>
+        <tr><td>进入的栏目：<input type="text" name="sectionID" value="01" /></td></tr>
+        <tr><td>页 序 号：<input type="text" name="pageNo" size="3" value="4" onpaste="return false" onkeypress="return (event.keyCode>=48&&event.keyCode<=57);" /></td></tr>
+        <tr><td>页 长 度：<input type="text" name="pageLength" size="3" value="20" onpaste="return false" onkeypress="return (event.keyCode>=48&&event.keyCode<=57);" /></td></tr>
+        <tr><td>总记录数：<input type="text" name="recordTotal" value="46358" /></td></tr>
+        <tr><td>批次索引号：<input type="text" name="associateID" value="00000000000000000" /></td></tr>
+        <tr><td>中介机构 ：<input type="Hidden" name="isIntermediary" size="10" maxlength="20" value="False" /></td></tr>
+企业名称：<input type='text' name='field_CorporationName' value=''>
+组织机构代码：<input type='text' name='field_OrganizationCode' value=''>
+        
+      </form>
+    </table>
+
+    <!------------- 列表表单 ------------------>
+    <table border="0" cellpadding="2" cellspacing="0" style="display: none">
+      <form name="listForm" method="POST" target="listWindow" action="">
+        <tr><td>栏目编号：<input type="text" name="sectionID" value="01" /></td></tr>
+        <tr><td>批次号：<input type="text" name="associateID" value="00000000000000000" /></td></tr>
+        <tr><td>表 名：<input type="text" name="tableID" value="CourtNotCarryOut" /></td></tr>
+        <tr><td>信用编号：<input type="text" name="creditID" value="" /></td></tr>
+        <tr><td>rowID：<input type="text" name="rowID" value="" /></td></tr>
+        <tr><td>时点值：<input type="text" name="timeSpan" value="" /></td></tr>
+        <tr><td>序号：<input type="text" name="seqNo" value="" /></td></tr>
+        <tr><td>企业名称：<input type="text" name="corpName" value="" /></td></tr>
+        <tr><td>标题：<input type="text" name="titleID" value="" /></td></tr>
+      </form>
+    </table>
+  </div>
+</body>
+</html>
